@@ -1,0 +1,21 @@
+:root{--ink:#1d2340;--bg:#f5f6fa;--card:#fff;--line:#d9dce8;--brand:#2b3a8c;--gold:#e8a317;--ok:#1d7a4d;--warn:#b4501a;--bad:#b3261e}
+@media(prefers-color-scheme:dark){:root{--ink:#e8eaf6;--bg:#12152a;--card:#1b2040;--line:#343b66;--brand:#8c9cff}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 "Noto Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:14px 16px;background:var(--brand);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:8px}
+header h1{font:600 1.15rem "Noto Serif",Georgia,serif;margin:0}
+nav{display:flex;gap:6px;overflow-x:auto;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--line)}
+nav button{flex:0 0 auto;border:1px solid var(--line);background:none;color:var(--ink);padding:10px 14px;border-radius:999px;min-height:44px}
+nav button.on{background:var(--gold);border-color:var(--gold);color:#1d2340;font-weight:600}
+main{max-width:860px;margin:0 auto;padding:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:14px}
+label{display:block;font-weight:600;margin:10px 0 4px}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--bg);color:var(--ink)}
+.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+button.go{background:var(--brand);color:#fff;border:0;padding:14px 20px;border-radius:8px;font:600 1rem inherit;min-height:48px;margin-top:12px;cursor:pointer}
+button.alt{background:none;color:var(--brand);border:1px solid var(--brand)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:2px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;min-height:44px}
+.chip.on{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 20%,transparent)}.chip small{display:block;opacity:.7}
+.flag{padding:8px 10px;border-radius:6px;margin:6px 0}.flag.w{background:#fdebd9;color:var(--warn)}.flag.b{background:#fde3e1;color:var(--bad)}.flag.i{background:#e3f1ea;color:var(--ok)}
+table{width:100%;border-collapse:collapse}td,th{border-bottom:1px solid var(--line);padding:6px;text-align:left;font-size:.92rem}
+.bar{height:10px;background:var(--line);border-radius:5px}.bar i{display:block;height:100%;background:var(--ok);border-radius:5px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
